@@ -6,6 +6,7 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
 import { setSearchField, requestRobots } from '../actions';
+import Header from '../components/Header';
 
 import './App.css';
 // import { requestRobots } from '../reducers';
@@ -43,7 +44,7 @@ class App extends React.Component {
     } else {
       return (
         <div className='tc'>
-          <h1 className='f2'>Robofriends</h1>
+          <Header/>
           <SearchBox searchChange={onSearchChange} />
           <Scroll>
             <ErrorBoundry>

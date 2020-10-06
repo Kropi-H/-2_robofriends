@@ -8,6 +8,7 @@ const CardList = (propsRobots) => {
     <div>
       {
         robots.map((user, i) => {
+          console.log('Card list');
           return (
             <Card
               key={i}
